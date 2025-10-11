@@ -130,3 +130,44 @@ body {
 .socials a:hover {
   color: #005fcc;
 }
+
+.about {
+  background: #f5f6f8;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills span {
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.skills span:hover {
+  background: #0078ff;
+  color: #fff;
+}
