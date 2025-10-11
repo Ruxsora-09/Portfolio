@@ -1,23 +1,132 @@
+/* ===== Global Styles ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  background: #f9fafc;
   color: #222;
-  text-align: center;
+  min-height: 100vh;
 }
 
+/* ===== Navbar ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 20px 80px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0078ff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e8f0ff, #f9faff);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0078ff;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #0078ff;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background: #0078ff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #005fcc;
+}
+
+.btn.secondary {
+  border: 2px solid #0078ff;
+  color: #0078ff;
+}
+
+.btn.secondary:hover {
+  background: #0078ff;
+  color: white;
+}
+
+/* ===== Social Icons ===== */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  color: #0078ff;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #005fcc;
 }
