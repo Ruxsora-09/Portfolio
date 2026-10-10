@@ -1,21 +1,19 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    const open = navLinks.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.textContent = open ? "Close" : "☰";
+// Smooth scrolling for section links.
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
   });
+});
 
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.textContent = "☰";
-    });
-  });
-}
-
-const year = document.querySelector("#year");
-if (year) year.textContent = new Date().getFullYear();
+// Light mode is the default. Both sun and moon icons stay visible;
+// the active theme is highlighted in the switch.
+var themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', function () {
+  var isDark = document.body.classList.toggle('dark-mode');
+  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  themeToggle.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+});

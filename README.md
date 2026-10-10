@@ -1,20 +1,14 @@
 # Ruxsora Odilbekova — Portfolio
 
-A simple, responsive personal portfolio built with HTML, CSS, and JavaScript.
+## Before submitting
+1. Add your photo to `images/` and name it `profile.jpg`.
+2. Replace `YOUR_EMAIL@example.com` with your email.
+3. Replace `YOUR_TELEGRAM_USERNAME` with your Telegram username.
+4. Replace `YOUR_GITHUB_USERNAME` in GitHub and project links with your username.
+5. Check that each project link points to a real project.
 
-## Files
-- `index.html` — all website content
-- `style.css` — styling and responsive layout
-- `script.js` — mobile menu and current year
+## Run locally
+Open `index.html` in your browser.
 
-## Before publishing
-1. Replace the placeholder contact links in `index.html`.
-2. Verify all education, achievement, skill, and project details are accurate.
-3. Add real demo and repository links when you have them.
-4. Open `index.html` in a browser and test the site.
-
-## GitHub
-Create a **Public** repository named `portfolio`, then upload `index.html`, `style.css`, and `script.js` to the repository root.
-
-## Vercel
-Sign in to https://vercel.com with GitHub, choose **Add New → Project**, import the `portfolio` repository, select **Other** if asked for a framework preset, leave build/output settings empty, and click **Deploy**.
+## Publish
+Upload the files and the `images` folder to a public GitHub repository, then import that repository into Vercel.

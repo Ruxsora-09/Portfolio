@@ -3,129 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ruxsora Odilbekova — student, developer, and IT enthusiast from Uzbekistan.">
   <title>Ruxsora Odilbekova | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header" id="home">
-    <a class="brand" href="#home">Ruxsora Odilbekova<span>.</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="nav-links" aria-label="Main navigation">
+  <header class="topbar">
+    <a class="logo" href="#home">RO.</a>
+    <nav>
       <a href="#about">About</a>
-      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+            <span class="theme-option sun-option" aria-hidden="true">
+              <svg class="theme-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            </span>
+            <span class="theme-option moon-option" aria-hidden="true">
+              <svg class="theme-icon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.6 8.6 0 0 1 8.8 3.5 8.7 8.7 0 1 0 20.5 15.2Z"/></svg>
+            </span>
+          </button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="intro-label">STUDENT · DEVELOPER · IT ENTHUSIAST</p>
-        <h1>Hi, I'm <span>Ruxsora<br>Odilbekova.</span></h1>
-        <p class="hero-text">I'm a high-school student from Khorezm, Uzbekistan, interested in programming, technology, and entrepreneurship. I enjoy learning by building projects and turning ideas into something useful.</p>
-        <div class="hero-buttons">
-          <a class="button primary" href="#projects">View my projects</a>
-          <a class="button secondary" href="#contact">Contact me</a>
-        </div>
+    <section class="hero section" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Ruxsora<br>Odilbekova</h1>
+        <p class="role">IT Student · Aspiring Developer</p>
+        <p class="motto">“I learn, create, and grow.”</p>
+        <a class="text-link" href="#projects">Explore my projects ↓</a>
       </div>
-      <div class="hero-card">
-        <div class="initials">RO</div>
-        <h2>Curious by nature.<br>Developer in progress.</h2>
-        <p>Learning, creating, improving — one project at a time.</p>
+      <div class="portrait-wrap">
+        <img class="portrait" src="images/profile.jpg" alt="Portrait of Ruxsora Odilbekova">
+        <p class="photo-note">Add your photo here: <strong>images/profile.jpg</strong></p>
       </div>
     </section>
 
     <section class="section" id="about">
-      <div class="section-title"><p>01 / ABOUT</p><h2>A little about me</h2></div>
-      <div class="content-card">
-        <p>I'm currently a high-school student at a specialized school in Khorezm. My main interests are programming, IT, and building digital products. I have taken part in olympiads, team projects, and technology events, where I've practised problem-solving and communication.</p>
-        <p>Outside technology, I enjoy reading, poetry, and learning languages. In the future, I hope to study further, gain international experience, and create useful products of my own.</p>
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <div class="section-title"><p>02 / EDUCATION</p><h2>My education</h2></div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-date">Current</span>
-          <div><h3>Specialized School No. 2, Khiva</h3><p>Upper-secondary student, studying academic subjects while developing my skills in programming and English.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-date">English</span>
-          <div><h3>IELTS — 7.5</h3><p>English language certification.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-date">Mathematics</span>
-          <div><h3>Mathematics certificate — B+</h3><p>Certificate result: 99.62%.</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-date">Languages</span>
-          <div><h3>Language learning</h3><p>Uzbek (native), English (C1+), and Turkish (B1+).</p></div>
-        </article>
-      </div>
-      <p class="note">Check that the school name and certificate details are written exactly as you want before publishing.</p>
+      <p class="eyebrow">01 / ABOUT ME</p>
+      <h2>About me</h2>
+      <p class="about-copy">I study at Specialized School No. 2 in Khiva. I am interested in IT, programming, and learning about new technologies. I put what I learn into practice by building small projects. In the future, I want to create useful products that help people.</p>
     </section>
 
     <section class="section" id="skills">
-      <div class="section-title"><p>03 / SKILLS</p><h2>What I'm learning and using</h2></div>
+      <p class="eyebrow">02 / WHAT I KNOW</p>
+      <h2>Skills</h2>
       <div class="skills-list">
-        <article class="content-card"><h3>Web development</h3><p>HTML · CSS · JavaScript · Responsive design</p></article>
-        <article class="content-card"><h3>Programming & tools</h3><p>Python · Git · GitHub · Vercel</p></article>
-        <article class="content-card"><h3>Other interests</h3><p>Problem-solving · Teamwork · Project planning · English communication</p></article>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>Python</span><span>Git & GitHub</span><span>Responsive Design</span>
+        <span>Telegram Bots</span><span>Teamwork</span>
       </div>
-      <p class="note">Only keep technologies you have actually studied or used; you can add more as you learn.</p>
     </section>
 
     <section class="section" id="projects">
-      <div class="section-title"><p>04 / PROJECTS</p><h2>Projects I've worked on</h2></div>
-      <div class="projects-list">
+      <p class="eyebrow">03 / WHAT I'VE BUILT</p>
+      <h2>Projects</h2>
+      <div class="projects">
         <article class="project-card">
-          <div class="project-number">01</div>
-          <div><h3>BemorOvozi</h3><p>A healthcare feedback platform concept developed for a hackathon. It explores how patients and their relatives could share feedback through a QR-based form.</p><p class="project-tech">Team project · Civic technology · Prototype concept</p></div>
+          <img src="images/bemorovozi.svg" alt="Illustration for the BemorOvozi project">
+          <div class="project-content">
+            <h3>BemorOvozi</h3>
+            <p>A project concept that helps patients share feedback and complaints with clinics through a QR code.</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/bemorovozi" target="_blank" rel="noopener">View project ↗</a>
+          </div>
         </article>
         <article class="project-card">
-          <div class="project-number">02</div>
-          <div><h3>School Voting Telegram Bot</h3><p>A school voting bot project focused on collecting votes and preventing the same user from voting more than once.</p><p class="project-tech">Telegram bot · Database · Programming practice</p></div>
+          <img src="images/voting.svg" alt="Illustration for the school voting bot">
+          <div class="project-content">
+            <h3>School Voting Bot</h3>
+            <p>A Telegram bot designed to let students vote while ensuring each participant can vote only once.</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/school-voting-bot" target="_blank" rel="noopener">View project ↗</a>
+          </div>
         </article>
         <article class="project-card">
-          <div class="project-number">03</div>
-          <div><h3>Personal Mood-Boosting Website</h3><p>A simple, phone-friendly website designed to share encouraging messages in a calm, welcoming space.</p><p class="project-tech">HTML · CSS · Responsive web design</p></div>
-    
+          <img src="images/mood-site.svg" alt="Illustration for the mood-boosting website">
+          <div class="project-content">
+            <h3>Mood-Boosting Website</h3>
+            <p>A simple webpage with uplifting thoughts and kind messages to help brighten someone's day.</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/mood-boosting-website" target="_blank" rel="noopener">View project ↗</a>
+          </div>
+        </article>
       </div>
-      <p class="note">Add links to each project's live demo or GitHub repository when available. Don't claim features that aren't in your actual project.</p>
+      <p class="small-note">Note: replace YOUR_GITHUB_USERNAME in the project links with your GitHub username.</p>
     </section>
 
-    <section class="section" id="achievements">
-      <div class="section-title"><p>05 / ACHIEVEMENTS & ACTIVITIES</p><h2>Things I'm proud of</h2></div>
-      <div class="achievement-grid">
-        <article class="content-card"><span class="achievement-type">OLYMPIADS</span><h3>1st place — City Informatics Olympiad</h3><p>Recognition in informatics at city level.</p></article>
-        <article class="content-card"><span class="achievement-type">OLYMPIADS</span><h3>1st place — City English Olympiad</h3><p>Recognition in English at city level.</p></article>
-        <article class="content-card"><span class="achievement-type">HACKATHON</span><h3>2nd place — IT Park Ideaton</h3><p>Team participation in an idea-development event.</p></article>
-        <article class="content-card"><span class="achievement-type">COMMUNITY</span><h3>2nd place — IT Community Debate</h3><p>Experience in teamwork, presenting ideas, and discussion.</p></article>
+    <section class="section" id="education">
+      <p class="eyebrow">04 / EDUCATION & ACHIEVEMENTS</p>
+      <h2>Education & achievements</h2>
+      <div class="education-list">
+        <div><h3>Education</h3><p>Specialized School No. 2, Khiva</p></div>
+        <div><h3>Certificates</h3><p>IELTS 7.5 · Mathematics Certificate B+ (99.62%)</p></div>
+        <div><h3>Achievements</h3><p>1st place — City Informatics Olympiad · 1st place — City English Olympiad · 2nd place — IT Park Ideathon · 2nd place — IT Community Debate</p></div>
+        <div><h3>Languages</h3><p>Uzbek — Native · English — C1+ · Turkish — B1+</p></div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="section-title"><p>06 / CONTACT</p><h2>Let's connect</h2></div>
-      <div class="content-card contact-card">
-        <p>Have a project idea, collaboration opportunity, or just want to talk about technology? Feel free to reach out.</p>
-        <div class="contact-links">
-          <!-- Replace placeholder links below before publishing. -->
-          <a href="mailto:YOUR_EMAIL@example.com">Email</a>
-          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" rel="noreferrer">Telegram</a>
-          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-        <p class="note">Replace the sample links with your real profiles, or remove any platform you don't use.</p>
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow">05 / GET IN TOUCH</p>
+      <h2>Contact</h2>
+      <p class="contact-intro">Feel free to reach out for collaborations or questions.</p>
+      <div class="contact-links">
+        <a href="mailto:YOUR_EMAIL@example.com" aria-label="Email">
+          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          <span>Email</span><span class="external-mark">↗</span>
+        </a>
+        <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-7.1 18-3.8-7.1L3 10.1 21 3Z"/><path d="m10.1 13.9 4.2-4.2"/></svg>
+          <span>Telegram</span><span class="external-mark">↗</span>
+        </a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="contact-icon github-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.3 15 3.2a13.2 13.2 0 0 0-7 0C5.5 1.3 4.3 1.6 4.3 1.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 18.1V22"/></svg>
+          <span>GitHub</span><span class="external-mark">↗</span>
+        </a>
       </div>
+      <p class="small-note">Before submitting the website, replace the email, Telegram, and GitHub links with your own.</p>
     </section>
   </main>
 
-  <footer><p>© <span id="year">2026</span> Ruxsora Odilbekova</p><a href="#home">Back to top ↑</a></footer>
+  <footer><p>© 2026 Ruxsora Odilbekova</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
