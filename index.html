@@ -1,127 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F7F9">
+  <meta name="description" content="Ruxsora Odilbekova — IT student and aspiring developer from Khorezm, Uzbekistan.">
   <title>Ruxsora Odilbekova | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Hanken+Grotesk:wght@400;500;600" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="logo" href="#home">RO.</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
-            <span class="theme-option sun-option" aria-hidden="true">
-              <svg class="theme-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-            </span>
-            <span class="theme-option moon-option" aria-hidden="true">
-              <svg class="theme-icon" viewBox="0 0 24 24"><path d="M20.5 15.2A8.6 8.6 0 0 1 8.8 3.5 8.7 8.7 0 1 0 20.5 15.2Z"/></svg>
-            </span>
-          </button>
+  
+  <header class="header">
+    <a class="logo" href="#home"><span>r.</span> Ruxsora Odilbekova</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
     </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Switch theme">
+      <span class="sun" aria-hidden="true">☼</span><span class="moon" aria-hidden="true">☾</span>
+    </button>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-text">
-        <p class="eyebrow">HELLO, I'M</p>
-        <h1>Ruxsora<br>Odilbekova</h1>
-        <p class="role">IT Student · Aspiring Developer</p>
-        <p class="motto">“I learn, create, and grow.”</p>
-        <a class="text-link" href="#projects">Explore my projects ↓</a>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="kicker"><span class="dot"></span> IT student · Aspiring developer</p>
+        <h1>Hi, I'm Ruxsora.<br><span>I build things</span><br>with technology.</h1>
+        <p class="hero-text">I'm a high-school student from Khorezm, Uzbekistan. I love web development and programming, and I like making things that solve real problems.</p>
+        <div class="hero-buttons"><a class="btn primary" href="#projects">Explore my projects <span>↗</span></a><a class="btn secondary" href="#contact">Get in touch</a></div>
+        <div class="quick-facts"><div><strong>English C1+</strong><small>Language proficiency</small></div><div><strong>IT & Technology</strong><small>My main focus</small></div><div><strong>Khorezm, UZ</strong><small>Where I'm based</small></div></div>
       </div>
-      <div class="portrait-wrap">
-        <img class="portrait" src="images/profile.jpg" alt="Portrait of Ruxsora Odilbekova">
-
+      <div class="hero-photo-wrap">
+        <div class="photo-accent accent-one"></div><div class="photo-accent accent-two"></div>
+        <div class="photo-frame">
+          <img src="images/profile.jpg" alt="Portrait of Ruxsora Odilbekova" class="hero-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-placeholder"><span>YOUR PHOTO</span><small>Replace with images/profile.jpg</small></div>
+        </div>
+        <div class="photo-label"><span class="label-mark">✳</span><span><strong>Always asking why.</strong><small>Then building the answer.</small></span></div>
+        
       </div>
+      
     </section>
 
-    <section class="section" id="about">
-      <p class="eyebrow">01 / ABOUT ME</p>
-      <h2>About me</h2>
-      <p class="about-copy">I study at Specialized School No. 2 in Khiva. I am interested in IT, programming, and learning about new technologies. I put what I learn into practice by building small projects. In the future, I want to create useful products that help people.</p>
-    </section>
+    <section class="stats"><div class="wrap stats-grid"><div><strong>7.5</strong><span>IELTS score</span></div><div><strong>99.62%</strong><span>Mathematics certificate</span></div><div><strong>2×</strong><span>1st place, city olympiads</span></div><div><strong>5</strong><span>Projects and concepts</span></div></div></section>
 
-    <section class="section" id="skills">
-      <p class="eyebrow">02 / WHAT I KNOW</p>
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>Python</span><span>Git & GitHub</span><span>Responsive Design</span>
-        <span>Telegram Bots</span><span>Teamwork</span>
+    <section class="about section" id="about"><div class="wrap">
+      
+      <div class="about-grid">
+        <h2>I like figuring out how things work.<br><em>Then making them better.</em></h2>
+        <div class="about-copy"><p>I study at a specialized school in Khiva, where most of my time goes into programming, math, and English. I learn best by building things, getting them wrong, and fixing them. I also enjoy working in a team and looking for ways technology can make everyday life easier.</p><p>Competitions and team projects taught me to solve problems under pressure, explain my ideas clearly, and listen to other people. My goal is to become a strong developer and build products that actually help people.</p><div class="pills"><span>Problem-solving</span><span>Team projects</span><span>Product ideas</span><span>Continuous learning</span></div></div>
       </div>
-    </section>
+      <div class="education-journey">
+        <article class="journey-card"><span class="journey-mark">01</span><div><small>PREVIOUS SCHOOL</small><h3>School No. 17, Khiva</h3><p>My earlier school years in Khiva.</p></div></article>
+        <article class="journey-card"><span class="journey-mark">02</span><div><small>CURRENT SCHOOL</small><h3>Specialized School No. 2, Khiva</h3><p>Upper-secondary student in Khorezm, Uzbekistan.</p></div></article>
+        <article class="journey-card"><span class="journey-mark">AXV</span><div><small>STUDENT PROGRAM</small><h3>Al-Xorazmiy Vorislari (AXV)</h3><p>A student program where I learn technology and build projects together with other students.</p></div></article>
+      </div>
+    </div></section>
 
-    <section class="section" id="projects">
-      <p class="eyebrow">03 / WHAT I'VE BUILT</p>
-      <h2>Projects</h2>
-      <div class="projects">
-        <article class="project-card">
-          <img src="images/bemorovozi.svg" alt="Illustration for the BemorOvozi project">
-          <div class="project-content">
-            <h3>BemorOvozi</h3>
-            <p>A project concept that helps patients share feedback and complaints with clinics through a QR code.</p>
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/bemorovozi" target="_blank" rel="noopener">View project ↗</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="images/voting.svg" alt="Illustration for the school voting bot">
-          <div class="project-content">
-            <h3>School Voting Bot</h3>
-            <p>A Telegram bot designed to let students vote while ensuring each participant can vote only once.</p>
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/school-voting-bot" target="_blank" rel="noopener">View project ↗</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="images/mood-site.svg" alt="Illustration for the mood-boosting website">
-          <div class="project-content">
-            <h3>Mood-Boosting Website</h3>
-            <p>A simple webpage with uplifting thoughts and kind messages to help brighten someone's day.</p>
-            <a href="https://github.com/YOUR_GITHUB_USERNAME/mood-boosting-website" target="_blank" rel="noopener">View project ↗</a>
-          </div>
-        </article>
+    <section class="skills section" id="skills"><div class="wrap">
+      
+      <div class="section-heading"><h2>My toolkit</h2><p>What I use and practise in my projects.</p></div>
+      <h3 class="skills-sub">Technical skills</h3>
+      <div class="skills-grid">
+        <article class="skill"><div class="skill-icon orange"><svg viewBox="0 0 24 24"><path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3Z"/><path d="M8 8h8M8.5 12h7l-.5 4-3 1-3-1"/></svg></div><h3>HTML</h3><p>Building pages with a clear structure.</p></article>
+        <article class="skill"><div class="skill-icon blue"><svg viewBox="0 0 24 24"><path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3Z"/><path d="M8 8h8l-.5 3h-7m.5 3h6l-.5 2-2.5 1-2.5-1"/></svg></div><h3>CSS</h3><p>Styling and layouts.</p></article>
+        <article class="skill"><div class="skill-icon yellow"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M13 7v9c0 3-2 4-5 2m7 0c1 2 5 2 6 0s-2-3-4-4-2-4 1-4c1 0 2 .5 3 1"/></svg></div><h3>JavaScript</h3><p>Making pages interactive.</p></article><article class="skill"><div class="skill-icon blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.8"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg></div><h3>React</h3><p>Building interfaces from reusable components.</p></article>
+        <article class="skill"><div class="skill-icon green"><svg viewBox="0 0 24 24"><path d="M12 3c-5 0-6 2-6 5v3h7v2H5c-2 0-3 2-3 4s1 4 4 4h3v-4c0-2 2-3 4-3h4c2 0 3-2 3-4V7c0-3-2-4-5-4h-3Z"/><circle cx="10" cy="7" r=".8"/><circle cx="15" cy="18" r=".8"/></svg></div><h3>Python</h3><p>The basics, and lots of problem-solving.</p></article><article class="skill"><div class="skill-icon green"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>MongoDB</h3><p>Storing and working with data.</p></article>
+        <article class="skill"><div class="skill-icon purple"><svg viewBox="0 0 24 24"><path d="m12 2 10 10-10 10L2 12 12 2Z"/><path d="m8 8 8 8m0-10-5 5"/><circle cx="8" cy="8" r="1.5"/><circle cx="16" cy="16" r="1.5"/></svg></div><h3>Git & GitHub</h3><p>Saving and sharing my projects.</p></article>
+        <article class="skill"><div class="skill-icon teal"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="15" height="12" rx="1.5"/><path d="M1 19h17m-8-3v3"/><rect x="16" y="10" width="6" height="12" rx="1.5"/></svg></div><h3>Responsive Design</h3><p>Pages that fit phones, tablets, and desktops.</p></article>
+        <article class="skill"><div class="skill-icon pink"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="3"/><path d="M12 3v4m-4 5h.1M16 12h.1M8 17h8"/><circle cx="12" cy="3" r="1"/></svg></div><h3>Telegram Bots</h3><p>Bot flows, user actions, and data.</p></article>
+        
       </div>
-      <p class="small-note">Note: replace YOUR_GITHUB_USERNAME in the project links with your GitHub username.</p>
-    </section>
+      <h3 class="skills-sub">Soft skills</h3>
+      <div class="soft-grid"><article class="soft"><h4>Teamwork</h4><p>Sharing ideas and building together.</p></article><article class="soft"><h4>Communication</h4><p>Explaining my ideas clearly, from debates to group projects.</p></article><article class="soft"><h4>Problem-solving</h4><p>Breaking hard tasks into steps, from olympiads to real projects.</p></article><article class="soft"><h4>Presenting ideas</h4><p>Turning an idea into a clear pitch, as in hackathons and ideathons.</p></article></div>
+    </div></section>
 
-    <section class="section" id="education">
-      <p class="eyebrow">04 / EDUCATION & ACHIEVEMENTS</p>
-      <h2>Education & achievements</h2>
-      <div class="education-list">
-        <div><h3>Education</h3><p>Specialized School No. 2, Khiva</p></div>
-        <div><h3>Certificates</h3><p>IELTS 7.5 · Mathematics Certificate B+ (99.62%)</p></div>
-        <div><h3>Achievements</h3><p>1st place — City Informatics Olympiad · 1st place — City English Olympiad · 2nd place — IT Park Ideathon · 2nd place — IT Community Debate</p></div>
-        <div><h3>Languages</h3><p>Uzbek — Native · English — C1+ · Turkish — B1+</p></div>
+    <section class="projects section" id="projects"><div class="wrap">
+      
+      <div class="section-heading"><h2>Things I've worked on</h2><p>Websites, learning tools, a bot, and a couple of civic-tech ideas.</p></div>
+      <div class="project-grid">
+        <article class="project"><div class="project-art art-health"><span class="art-label">Healthcare</span><div class="mini-card"><span class="cross">+</span><span><b>BemorOvozi</b><small>Patient feedback platform</small></span></div><span class="art-number">01</span></div><div class="project-content"><div class="project-title"><h3>BemorOvozi</h3><span>Team concept</span></div><p>Our team's hackathon concept for healthcare. Patients and their relatives scan a QR code and share their concerns more easily.</p><div class="tags"><span>Tech for good</span><span>Product thinking</span><span>QR workflow</span></div><a class="project-link" href="http://bemorovozi.uz/" target="_blank" rel="noopener noreferrer">Visit project website <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project"><div class="project-art art-bot"><span class="art-label">Automation</span><div class="bot-card"><div class="bot-head"><span>● ● ●</span><b>school-vote.bot</b></div><div class="chat">Choose your option</div><div class="choice">Option A <i><b></b></i></div><div class="choice">Option B <i class="short"><b></b></i></div><small>✓ One vote per user</small></div><span class="art-number">02</span></div><div class="project-content"><div class="project-title"><h3>School Voting Bot</h3><span>Bot project</span></div><p>A Telegram voting bot where every user can vote only once. It was my first real experience with bot logic and storing data.</p><div class="tags"><span>Telegram</span><span>Bot logic</span><span>Database</span></div><a class="project-link" href="https://t.me/im2_ovozbot" target="_blank" rel="noopener noreferrer">Visit project website <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project"><div class="project-art art-web"><span class="art-label">Education</span><div class="web-card"><div class="web-dots">● ● ●</div><span class="web-eyebrow">DRAND-EDU</span><b>Learn. Grow.<br>Reach your goals.</b><div class="web-lines"><i></i><i></i><i></i></div><span class="web-button">Educational Center ↗</span></div><span class="art-number">03</span></div><div class="project-content"><div class="project-title"><h3>Drand-Edu Website</h3><span>Web development</span></div><p>A website for an educational center. It shows what the center offers and helps visitors explore it online.</p><div class="tags"><span>Education</span><span>Web design</span><span>Responsive UI</span></div><a class="project-link" href="https://grand-edu.vercel.app/" target="_blank" rel="noopener noreferrer">Visit project website <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project"><div class="project-art art-community"><span class="art-label">Exam preparation</span><div class="community-card"><span class="community-symbol">✓</span><b>Prepare with<br>purpose.</b><small>PRACTISE · REVIEW · IMPROVE</small></div><span class="art-number">04</span></div><div class="project-content"><div class="project-title"><h3>ExamLab</h3><span>EdTech project</span></div><p>A project that helps students prepare for exams: practise questions, check what you understand, and study in a more organized way.</p><div class="tags"><span>Education</span><span>Practice tests</span><span>Learning tools</span></div><a class="project-link" href="https://examlab-seven.vercel.app/" target="_blank" rel="noopener noreferrer">Visit project website <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project"><div class="project-art art-health"><span class="art-label">Civic technology</span><div class="mini-card"><span class="cross">✳</span><span><b>Murojaat.uz</b><small>AI-powered citizen requests</small></span></div><span class="art-number">05</span></div><div class="project-content"><div class="project-title"><h3>Murojaat.uz</h3><span>AI web concept</span></div><p>A concept for sending requests to public organizations, with AI help. It routes each concern to the right place, and people can follow the status of their request.</p><div class="tags"><span>AI-assisted workflow</span><span>Civic tech</span><span>Request tracking</span></div><a class="project-link" href="https://murojaat-ai-flow.lovable.app" target="_blank" rel="noopener noreferrer">Visit project website <span aria-hidden="true">↗</span></a></div></article>
       </div>
-    </section>
+      
+    </div></section>
 
-    <section class="section contact-section" id="contact">
-      <p class="eyebrow">05 / GET IN TOUCH</p>
-      <h2>Contact</h2>
-      <p class="contact-intro">Feel free to reach out for collaborations or questions.</p>
-      <div class="contact-links">
-        <a href="mailto:YOUR_EMAIL@example.com" aria-label="Email">
-          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-          <span>Email</span><span class="external-mark">↗</span>
-        </a>
-        <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" rel="noopener" aria-label="Telegram">
-          <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-7.1 18-3.8-7.1L3 10.1 21 3Z"/><path d="m10.1 13.9 4.2-4.2"/></svg>
-          <span>Telegram</span><span class="external-mark">↗</span>
-        </a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg class="contact-icon github-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.3 15 3.2a13.2 13.2 0 0 0-7 0C5.5 1.3 4.3 1.6 4.3 1.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7A3.4 3.4 0 0 0 8 18.1V22"/></svg>
-          <span>GitHub</span><span class="external-mark">↗</span>
-        </a>
+    <section class="achievements section" id="achievements"><div class="wrap">
+      
+      <div class="achievement-layout">
+        <div class="education"><h2>Results so far,<br><em>and more to come.</em></h2><div class="education-card"><span class="education-icon">⌂</span><div><small>EDUCATION</small><h3>Specialized School No. 2, Khiva</h3><p>Upper-secondary student in Khorezm, Uzbekistan</p></div></div><div class="certificate"><span class="certificate-icon">↗</span><div><small>ENGLISH CERTIFICATION</small><h3>IELTS <b>7.5</b></h3></div><span class="cert-tag">Certified</span></div><div class="certificate"><span class="certificate-icon">∑</span><div><small>MATHEMATICS CERTIFICATE</small><h3>B+ <b>99.62%</b></h3></div><span class="cert-tag">Result</span></div><div class="certificate"><span class="certificate-icon">Aa</span><div><small>MOTHER TONGUE CERTIFICATE</small><h3>B+ <b>99.09%</b></h3></div><span class="cert-tag">Result</span></div><div class="languages"><h3>Languages</h3><div class="language"><span>Uzbek <small>Native</small></span><i><b style="width:100%"></b></i></div><div class="language"><span>English <small>C1+</small></span><i><b style="width:88%"></b></i></div><div class="language"><span>Turkish <small>A2+</small></span><i><b style="width:42%"></b></i></div></div></div>
+        <div class="award-list"><h3>Competition highlights</h3><article><span class="award-icon">01</span><div><small>INFORMATICS</small><h4>1st Place — City Informatics Olympiad</h4></div></article><article><span class="award-icon">02</span><div><small>ENGLISH</small><h4>1st Place — City English Olympiad</h4></div></article><article><span class="award-icon">03</span><div><small>IDEA DEVELOPMENT</small><h4>2nd Place — IT Park Ideaton</h4></div></article><article><span class="award-icon">04</span><div><small>COMMUNICATION</small><h4>2nd Place — IT Community Debate</h4></div></article><article><span class="award-icon">05</span><div><small>ARTIFICIAL INTELLIGENCE</small><h4>3rd Place — National AI Hackathon: Khorezm</h4></div></article><div class="achievement-note"><span>✳</span><p>These experiences taught me to think analytically, work with others, and turn an idea into a clear presentation.</p></div></div>
       </div>
-      <p class="small-note">Before submitting the website, replace the email, Telegram, and GitHub links with your own.</p>
-    </section>
+    </div></section>
+
+    <section class="contact section" id="contact"><div class="wrap contact-grid">
+      <div><h2>Let's make<br><em>something useful.</em></h2><p>Have a project, an idea, or a question about technology? I'd love to hear from you.</p><div class="contact-status"><span class="dot"></span> Open to learning & collaboration</div></div>
+      <div class="contact-card"><h3>Get in touch</h3><a href="mail:odilbekovaruxsora@gmail.com"><span class="contact-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span><small>Email</small><b>odilbekovaruxsora@gmail.com</b></span><strong>↗</strong></a><a href="https://t.me/xxrosiee" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="m21 3-7 18-4-7-7-4 18-7Z"/><path d="m10 14 5-5"/></svg></span><span><small>Telegram</small><b>@xxrosiee</b></span><strong>↗</strong></a><a href="https://github.com/Ruxsora-09" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-3m12 6v-4a4 4 0 0 0-1-3c3-.4 6-1.5 6-7a5 5 0 0 0-1-4 5 5 0 0 0-.1-3S16 1 13 3a12 12 0 0 0-6 0C4 1 2 2 2 2a5 5 0 0 0-.1 3 5 5 0 0 0-1 4c0 5 3 7 6 7a4 4 0 0 0-1 3v4"/></svg></span><span><small>GitHub</small><b>github.com/Ruxsora-09</b></span><strong>↗</strong></a><a href="https://www.linkedin.com/in/ruxsora-odilbekova-83a34b358/" target="_blank" rel="noreferrer"><span class="contact-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg></span><span><small>LinkedIn</small><b>Connect with me</b></span><strong>↗</strong></a></div>
+    </div></section>
   </main>
-
-  <footer><p>© 2026 Ruxsora Odilbekova</p><a href="#home">Back to top ↑</a></footer>
-  <script src="script.js"></script>
+  <footer class="footer wrap"><a class="logo" href="#home"><span>r.</span> Ruxsora Odilbekova</a><p>© <span id="year">2026</span> Ruxsora Odilbekova</p><a class="back-top" href="#home">Back to top ↑</a></footer>
 </body>
 </html>
